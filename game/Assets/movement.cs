@@ -60,8 +60,9 @@ public class movement : MonoBehaviour
     void Flip()
     {
         facingright = !facingright;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+        transform.Rotate(0f, 180f, 0f);
+        //Vector3 Scaler = transform.localScale;
+        //Scaler.x *= -1;
+        //transform.localScale = Scaler;
     }
 }
